@@ -36,7 +36,7 @@ nav {
     display:flex; 
     justify-content: space-between;
     flex-wrap: wrap;
-    opacity: 0.9;
+    opacity: 1;
     min-width:100vw;
     z-index: 100;
  }  
@@ -162,7 +162,7 @@ nav span {
 
 /*About CSS*/
 
-.about {
+#about {
     display:flex;
     flex-wrap: wrap;
     padding:30px;
@@ -172,12 +172,12 @@ nav span {
     visibility: hidden;
 }
 
-.about p {
+#about p {
      padding: 40px; 
      flex:1;
 }
 
-.about img {
+#about img {
     height: 400px;
     flex: 0 1 402px;
     border-radius: 50%;
@@ -269,7 +269,7 @@ footer {
     justify-content: center;
 }
 
-.connect {
+#connect {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -278,7 +278,7 @@ footer {
     letter-spacing: 1px;
 }
 
-.connect h3 {
+#connect h3 {
     flex-basis:100%;
 }
 
@@ -290,7 +290,7 @@ footer {
     justify-content: space-around;
 }
 
-.connect h3 {
+#connect h3 {
     letter-spacing: 1px;
 }
 

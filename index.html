@@ -12,14 +12,14 @@
     <body>
           <div class="wrapper"> 
 
-            <nav> 
+            <nav class="nav"> 
                 <div>
                     <a href="#" title="Devonta Johnson Portfolio" id="logo"> <img src="http://i.imgur.com/eznEhpp.png" alt="DJ Web Studios"></a>   
                 </div>
                 <ul>
-                    <li><a href="#"><span>About</span></a></li>
-                    <li><a href="#"><span>Portfolio</span></a></li>
-                    <li><a href="#"><span>Contact</span></a></li>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                    <li><a href="#connect"><span>Connect</span></a></li>
                 </ul>
             </nav>     
 
@@ -37,7 +37,7 @@
             </div>      
             
              <section>
-                <div class="about">
+                <div id="about">
                      <h2>About Me</h2>
                      <div class="aboutDetails">
                         <img src="http://i.imgur.com/k9jy1H9.jpg" alt="Devonta Johnson"/>
@@ -52,10 +52,10 @@
              </section> 
  
             <section>
-                <div class="projects">
+                <div id="portfolio">
                     <h2>Projects</h2> 
                     <div class="flex-grid-thirds">
-                        
+
                         <div class="sr">
                             <div class="col">
                                 <a href="https://quiet-inlet-59134.herokuapp.com" target="_blank" title="WebCamp">
@@ -66,7 +66,6 @@
                                 </a> 
                             </div>
                         </div>
-
 
                         <div class="sr">
                             <div class="col">
@@ -79,7 +78,6 @@
                             </div>
                         </div>
 
-                        
                         <div class="sr">
                             <div class="col">
                                 <a href="https://codepen.io/devjoh91/pen/mRZbBN" target="_blank" title="Random Quote Generator">
@@ -91,7 +89,6 @@
                             </div>    
                         </div>
  
-                            
                         <div class="sr">
                             <div class="col">
                                 <a href="http://www.elitepowerwashingnc.com/" target="_blank" title="Elite Power Washing">
@@ -102,7 +99,6 @@
                                 </a>
                             </div>  
                         </div>
-
 
                         <div class="sr">
                             <div class="col">
@@ -115,7 +111,6 @@
                             </div>
                         </div>
 
-
                         <div class="sr">
                             <div class="col">
                                 <a href="https://codepen.io/devjoh91/pen/RZQNZx" target="_blank" title="The Great Color Game">
@@ -127,14 +122,12 @@
                            </div>   
                         </div>
 
-
                     </div> <!-- Flex-Grid -->
                  </div> <!-- Projects -->
              </section> 
 
              <footer>
-
-                <div class="connect">
+                <div id="connect">
                     <h3>Connect with me!</h3>
                     <div class="icons">
                         <a href="https://github.com/jamaljoh91" target="_blank" title="Github"><i class="fa fa-github fa-2x"></i></a>  
@@ -142,12 +135,13 @@
                         <a href="https://twitter.com/VontaJamal" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a>  
                     </div>
                 </div>   
-
             </footer>
  
         </div> <!--/wrapper-->
 
     </body>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>    
-    <script src="scripts/index.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>    
+    <script type="text/javascript" src="scripts/index.js"></script>
 </html>
