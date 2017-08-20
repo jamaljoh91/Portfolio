@@ -17,14 +17,17 @@ html {
 body {
     margin:0;
     padding:0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
     text-align: center;
     text-transform: uppercase;
-     flex:0 0 100%; 
-     height: 30px;  
-     font-size:2em;
+    flex:0 0 100%; 
+    height: 30px;  
+    font-size:2em;
+    margin: 50px auto;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /*Nav CSS*/
@@ -130,6 +133,7 @@ nav span {
     font-size: 50px;
     animation: blur 2s, 
     fade 1s; 
+    font-family: 'Open Sans Condensed', sans-serif;    
 }
 
 .cover-text {
@@ -140,6 +144,7 @@ nav span {
 .cover-caption {
     font-size:.5em; 
     padding-left:10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes blur {
@@ -193,6 +198,10 @@ nav span {
 }
 
 /*Projects CSS*/
+
+#portfolio {
+    padding:30px;
+}
 
 .flex-grid-thirds {
   display: flex;
@@ -280,6 +289,8 @@ footer {
 
 #connect h3 {
     flex-basis:100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
 .icons {
@@ -288,10 +299,6 @@ footer {
     padding:10px; 
     margin-bottom: 20px;
     justify-content: space-around;
-}
-
-#connect h3 {
-    letter-spacing: 1px;
 }
 
 .icons a:visited {

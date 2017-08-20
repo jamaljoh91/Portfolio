@@ -7,6 +7,7 @@ $('li').click(function(event) {
   const info = $(this);
   
   $.scrollTo(document.getElementById(section), 800);
+  
   });
 });
 
