@@ -1,0 +1,313 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --djws:#007CE1;
+    --comp:#e15300;
+    --dark:#292724;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+nav { 
+    position:fixed;
+    background: var(--dark);  
+    letter-spacing: 1px;    
+    display:flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0.9;
+    min-width:100vw;
+ }  
+
+ nav div {
+    padding: 10px 25px 5px 25px;  
+    display:inline-block;
+ }
+
+ nav a img {
+     height:40px;  
+     width:auto;   
+} 
+
+nav ul {
+    margin:0; 
+    margin-right:25px; 
+    padding:0;   
+    display:flex; 
+    list-style: none; 
+}  
+
+nav li {
+    flex:1;
+    display:flex;
+} 
+
+nav li a {
+    flex-basis:100%;
+    display:flex;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    padding:10px;
+    letter-spacing: 1px;
+}
+
+nav li a:hover {
+    background: var(--djws);  
+} 
+
+.active {
+    background: var(--djws);  
+}
+
+nav span {
+    display:block;
+    flex: 1;
+    text-align: center;
+}
+
+.cover {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    min-height:100vh; 
+    color: white;
+    font-size: 50px;
+}
+
+.cover-text {
+    margin: 0; 
+    text-align: center;
+}
+
+.cover-caption {
+    font-size:.5em; 
+    padding-left:10px;
+}
+
+.about {
+    display:flex;
+    flex-wrap: wrap;
+    background:green; 
+    padding:30px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+     flex:0 0 100%; 
+     height: 30px;  
+}
+
+.about p {
+     padding: 40px; 
+     flex:1;
+}
+
+.about img {
+    height: 400px;
+    flex: 0 1 402px;
+    border-radius: 50%;
+}
+
+/*Projects CSS*/
+
+.flex-grid-thirds {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.flex-grid-thirds .col {
+  width: 31%; 
+  margin: 0 10px 10px 10px;
+  align-self: stretch; 
+  position: relative;
+  border: 1px solid var(--dark);
+  max-height:335px;
+}
+
+.flex-grid-thirds img {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+ .description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .4s, visibility .2s;
+    font-weight: bold;
+} 
+
+.col:hover .description {
+    visibility: visible;
+    opacity: 0.8;
+    font-size:2em;
+}
+
+.descriptionText {
+    transition: .3s;
+    transform: translateY(1em);
+} 
+
+.col:hover .descriptionText {
+    transform: translateY(0);
+} 
+
+/*Footer CSS*/
+
+footer {
+    display:flex;
+    flex-wrap: wrap;
+    background:var(--dark);  
+    color:white;
+    justify-content: center;
+}
+
+.connect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.connect h3 {
+    flex-basis:100%;
+}
+
+.icons {
+    display:flex;
+    width:100%; 
+    padding:10px; 
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.connect h3 {
+    letter-spacing: 1px;
+}
+
+.icons a:visited {
+    color:inherit;
+}
+
+.icons a i:hover {
+    color:var(--comp);
+    transition: .3s; 
+}
+
+
+/*Video CSS*/
+
+ .fullscreen-bg {
+    position: absolute;  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    height:100vh;
+    max-width:100vw;
+    z-index: -100;    
+} 
+
+ .fullscreen-bg__video {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+} 
+
+     /* @media (max-width: 767px) {
+        .fullscreen-bg {
+            background-image: url('css/video/Hello-World.jpg') center center / cover no-repeat;
+        }
+
+        .fullscreen-bg__video {
+            display: none;
+        } 
+ }  */
+
+
+
+/*Responsiveness CSS Styling*/
+
+ @media all and (max-width:1000px) {
+  
+  nav ul {
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+    flex-basis: 100%;
+  }
+
+  nav li {
+    flex:1 1 50%;
+  }
+
+}
+
+
+ @media all and (max-width:500px) {
+  
+  nav li {
+    flex-basis:100%;
+  }
+  
+
+  /* Turn on flexbox */
+  .wrapper {
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* .toggleNav {
+    display: block;
+  } */
+
+  /* .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display:flex;
+    } */
+
+}
