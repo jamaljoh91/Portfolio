@@ -169,6 +169,7 @@ nav span {
     justify-content: center;
     align-items: center;
     border-bottom:2px solid var(--dark);
+    visibility: hidden;
 }
 
 .about p {
@@ -197,19 +198,20 @@ nav span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin-bottom: 100px;
 }
 
+.sr {
+    display: flex;
+    width: 31%; 
+    margin: 0 10px 10px 10px;   
+    max-height: 334px; 
+}
+
 .flex-grid-thirds .col {
-  width: 31%; 
-  margin: 0 10px 10px 10px;
-  align-self: stretch; 
   position: relative;
   border: 1px solid var(--dark);
-  max-height:335px;
   transform: scale(0.95); 
   transition-duration: .3s;
 }
