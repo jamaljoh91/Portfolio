@@ -127,6 +127,8 @@ nav span {
     min-height:100vh; 
     color: white;
     font-size: 50px;
+    animation: blur 2s, 
+    fade 1s; 
 }
 
 .cover-text {
@@ -137,6 +139,24 @@ nav span {
 .cover-caption {
     font-size:.5em; 
     padding-left:10px;
+}
+
+@keyframes blur {
+    from {
+        filter:blur(15px);
+    }
+    to {
+        filter:blur(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 /*About CSS*/
