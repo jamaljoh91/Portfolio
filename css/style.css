@@ -1,3 +1,5 @@
+/*Global CSS*/
+
 html {
     box-sizing: border-box;
 }
@@ -16,6 +18,16 @@ body {
     margin:0;
     padding:0;
 }
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+     flex:0 0 100%; 
+     height: 30px;  
+     font-size:2em;
+}
+
+/*Nav CSS*/
 
 nav { 
     position:fixed;
@@ -78,6 +90,34 @@ nav span {
     text-align: center;
 }
 
+/*Video CSS*/
+
+.fullscreen-bg {
+    position: absolute;  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    height:100vh;
+    max-width:100vw;
+    z-index: -100;    
+} 
+
+ .fullscreen-bg__video {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100vw; 
+    min-height: 100vh;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+} 
+
+/*Cover CSS*/
+
 .cover {
     display:flex;
     flex-direction: column;
@@ -99,18 +139,15 @@ nav span {
     padding-left:10px;
 }
 
+/*About CSS*/
+
 .about {
     display:flex;
     flex-wrap: wrap;
-    background:green; 
     padding:30px;
-}
-
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-     flex:0 0 100%; 
-     height: 30px;  
+    justify-content: center;
+    align-items: center;
+    border-bottom:2px solid var(--dark);
 }
 
 .about p {
@@ -122,6 +159,15 @@ h2 {
     height: 400px;
     flex: 0 1 402px;
     border-radius: 50%;
+}
+
+.aboutDetails {
+    display:flex;
+    width:75%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:1.8em;
 }
 
 /*Projects CSS*/
@@ -227,33 +273,6 @@ footer {
     color:var(--comp);
     transition: .3s; 
 }
-
-
-/*Video CSS*/
-
- .fullscreen-bg {
-    position: absolute;  
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;  
-    height:100vh;
-    max-width:100vw;
-    z-index: -100;    
-} 
-
- .fullscreen-bg__video {
-    position: absolute; 
-    right: 0; 
-    bottom: 0;
-    min-width: 100vw; 
-    min-height: 100vh;
-    width: auto; 
-    height: auto; 
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden;
-} 
 
      /* @media (max-width: 767px) {
         .fullscreen-bg {
