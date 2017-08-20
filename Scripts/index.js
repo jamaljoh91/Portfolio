@@ -5,18 +5,8 @@ $('li').click(function(event) {
   event.preventDefault();
   const section = $(this).text().toLowerCase();
   const info = $(this);
-
-  console.log(section);
-  console.log(info);
   
-  $.scrollTo(document.getElementById(section), 800, {
-        offset:-60,
-        onAfter: function() {
-          requestAnimationFrame(function() {
-              $(info).addClass('active').siblings().removeClass('active');
-          });
-        }
-      });
+  $.scrollTo(document.getElementById(section), 800);
   });
 });
 
