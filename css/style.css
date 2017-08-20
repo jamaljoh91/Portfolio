@@ -38,6 +38,7 @@ nav {
     flex-wrap: wrap;
     opacity: 0.9;
     min-width:100vw;
+    z-index: 100;
  }  
 
  nav div {
@@ -209,6 +210,8 @@ nav span {
   position: relative;
   border: 1px solid var(--dark);
   max-height:335px;
+  transform: scale(0.95); 
+  transition-duration: .3s;
 }
 
 .flex-grid-thirds img {
@@ -234,6 +237,10 @@ nav span {
     transition: opacity .4s, visibility .2s;
     font-weight: bold;
 } 
+
+.col:hover {
+    transform: scale(1);
+}
 
 .col:hover .description {
     visibility: visible;
