@@ -309,33 +309,20 @@ footer {
     color:var(--comp);
     transition: .3s; 
 }
-
-     /* @media (max-width: 767px) {
-        .fullscreen-bg {
-            background-image: url('css/video/Hello-World.jpg') center center / cover no-repeat;
-        }
-
-        .fullscreen-bg__video {
-            display: none;
-        } 
- }  */
-
-
+     
 
 /*Responsiveness CSS Styling*/
 
- @media all and (max-width:1000px) {
-  
-  nav ul {
-    flex-wrap:wrap;
-    margin:0;
-    padding:0;
-    flex-basis: 100%;
-  }
+@media all and (max-width:1000px) {
 
-  nav li {
-    flex:1 1 50%;
-  }
+    .fullscreen-bg__video {
+        display: none;
+    } 
+
+    .fullscreen-bg {
+        background-image: url('https://i.imgur.com/hYQ5eGL.jpg');
+        background-size:cover;
+    }
 
 }
 
