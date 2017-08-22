@@ -9,6 +9,14 @@ $('li').click(function(event) {
   $.scrollTo(document.getElementById(section), 800);
   
   });
+
+//Nav opener 
+$(function() {
+  $('.toggleNav').on('click',function() {
+    $('nav ul').toggleClass('open');
+  });
+});
+
 });
 
 const revealSettings = {

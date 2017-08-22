@@ -39,7 +39,6 @@ nav {
     display:flex; 
     justify-content: space-between;
     flex-wrap: wrap;
-    opacity: 1;
     min-width:100vw;
     z-index: 100;
  }  
@@ -93,6 +92,10 @@ nav span {
     flex: 1;
     text-align: center;
 }
+
+.toggleNav {
+    display: none;
+  }
 
 /*Video CSS*/
 
@@ -177,7 +180,7 @@ nav span {
     visibility: hidden;
 }
 
-#about p {
+.aboutText {
      padding: 40px; 
      flex:1;
 }
@@ -352,7 +355,6 @@ footer {
     #about img {
         height: 400px;
         flex: 0 1 402px;
-        border-radius: 50%;
     }
 
     .aboutDetails {
@@ -362,33 +364,63 @@ footer {
 
 }
 
-
-
-
-
  @media all and (max-width:500px) {
-  
-  nav li {
-    flex-basis:100%;
-  }
-  
 
-  /* Turn on flexbox */
-  .wrapper {
-    display:flex;
-    flex-direction:column;
-  }
+    .sr {
+        flex-basis:100%;
+        margin-bottom:75px;
+        max-height:267px;
+    }
 
-  /* .toggleNav {
-    display: block;
-  } */
+    .aboutDetails {
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis:100%;
+    }
 
-  /* .flex-nav ul {
-    display: none;
-  }
+    .aboutText {
+        flex-basis:100%;
+        padding: 20px; 
+    }
 
-  .flex-nav ul.open {
-    display:flex;
-    } */
+    #about img {
+        flex: 1 1 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav div {
+        width:100vw;
+        text-align: center;
+    }
+
+    #logo {
+        display:none;
+    }
+
+    .toggleNav {
+        display:block;
+    }
+
+    nav ul {
+        margin:0;
+        flex-wrap:wrap;
+        overflow: hidden;
+        max-height:0; 
+        transition: max-height .8s;              
+    }
+
+    nav ul.open {
+        display:flex;
+        max-height: 150px;
+      }
+    
+    nav li {
+        flex-basis:100vw;
+    }
+
+
 
 }
