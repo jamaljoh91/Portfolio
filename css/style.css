@@ -574,5 +574,25 @@ footer {
         -ms-flex-preferred-size:100vw;
             flex-basis:100vw;
     }
+
+    .icons a:link {
+        text-decoration: none;
+        color:white !important;
+    }
+
+    .icons a:visited {
+        text-decoration: none;
+        color:white !important;
+    }
+
+    .icons a:hover {
+        text-decoration: none;
+        color:white !important;
+    }
+
+    .icons a:active {
+        text-decoration: none;
+        color:white !important;
+    }
     
 }
