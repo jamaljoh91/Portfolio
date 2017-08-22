@@ -10,7 +10,7 @@ html {
 
 :root {
     --djws:#007CE1;
-    --comp:#e15300;
+    --comp:#e16300;
     --dark:#292724;
 }
 
@@ -28,6 +28,10 @@ h2 {
     font-size:2em;
     margin: 50px auto;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2, h3 {
+    color:var(--djws);
 }
 
 /*Nav CSS*/
@@ -83,10 +87,6 @@ nav li a:hover {
     background: var(--djws);  
 } 
 
-.active {
-    background: var(--djws);  
-}
-
 nav span {
     display:block;
     flex: 1;
@@ -131,8 +131,8 @@ nav span {
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+    color:white;
     min-height:100vh; 
-    color: white;
     font-size: 50px;
     animation: blur 2s, 
     fade 1s; 
@@ -148,6 +148,7 @@ nav span {
     font-size:.5em; 
     padding-left:10px;
     font-family: 'Open Sans', sans-serif;
+    color: var(--comp);
 }
 
 @keyframes blur {
@@ -176,7 +177,6 @@ nav span {
     padding:30px;
     justify-content: center;
     align-items: center;
-    border-bottom:2px solid var(--dark);
     visibility: hidden;
 }
 
@@ -204,6 +204,11 @@ nav span {
 
 #portfolio {
     padding:30px;
+    background-color:rgba(225, 99, 0,1);        
+}
+
+#portfolio h2 {
+    color:white;
 }
 
 .flex-grid-thirds {
@@ -242,10 +247,10 @@ nav span {
     left: 0;
     right: 0;
     background: var(--dark);
-    color: #fff;
     visibility: hidden;
     opacity: 0;
     display: flex;
+    color: var(--djws);      
     align-items: center;
     justify-content: center;
     transition: opacity .4s, visibility .2s;
@@ -258,7 +263,7 @@ nav span {
 
 .col:hover .description {
     visibility: visible;
-    opacity: 0.8;
+    opacity: 1;
     font-size:2em;
 }
 
@@ -273,6 +278,7 @@ nav span {
 
 .mobileText {
     display:none;
+    color:white;
 }
 
 /*Footer CSS*/
@@ -298,6 +304,7 @@ footer {
     flex-basis:100%;
     font-family: 'Open Sans Condensed', sans-serif;
     letter-spacing: 1px;
+    color: var(--comp);
 }
 
 .icons {
@@ -313,7 +320,7 @@ footer {
 }
 
 .icons a i:hover {
-    color:var(--comp);
+    color:var(--djws);
     transition: .3s; 
 }
      

@@ -27,5 +27,5 @@ const revealSettings = {
 };
 
 window.sr = ScrollReveal(revealSettings);
-sr.reveal('#about', {viewFactor:0.4});
+sr.reveal('#about', {viewFactor:0.1});
 sr.reveal('.sr', {duration: 750}, 250);
