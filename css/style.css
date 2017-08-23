@@ -444,10 +444,6 @@ footer {
     color:inherit;
 }
 
-/* .icons a:visited {
-    color:inherit;
-} */
-
 .icons a i:hover {
     color:var(--djws);
     -webkit-transition: .3s;
